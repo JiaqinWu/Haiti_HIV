@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+millify
+Streamline_extras.metric_cards 
+plotly.graph_objects 
+altair
+warnings
