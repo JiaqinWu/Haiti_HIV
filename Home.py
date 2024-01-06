@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+pip install millify
+pip install streamlit_extras.metric_cards
+pip install plotly.graph_objects
+pip install altair
 from millify import millify # shortens values (10_000 ---> 10k)
 from streamlit_extras.metric_cards import style_metric_cards # beautify metric card with css
 import plotly.graph_objects as go
