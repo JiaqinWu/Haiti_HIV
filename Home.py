@@ -1,14 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from millify import millify # shortens values (10_000 ---> 10k)
 from streamlit_extras.metric_cards import style_metric_cards # beautify metric card with css
 import plotly.graph_objects as go
 import altair as alt 
-import seaborn as sns
-import plotnine
-from plotnine import *
 import warnings 
 warnings.filterwarnings('ignore')
 
