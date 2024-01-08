@@ -15,7 +15,7 @@ image = "project_data/CGHPI.png"
 # Main page content
 st.set_page_config(page_title = 'Haiti HIV Dashboard', page_icon=':bar_chart',layout='wide')
 # Use columns for side-by-side layout
-col1, col2 = st.columns([1, 8])  # Adjust the width ratio as needed
+col1, col2 = st.columns([1, 6])  # Adjust the width ratio as needed
 
 # Place the image and title in the columns
 with col1:
@@ -37,7 +37,7 @@ df = df1[(df1.outcomeStats.isin(status))&(df1.DEM_Sexe.isin(sex))&(df1.DEM_age.b
 
 # Create five new tabs with centered labels
 listTabs = ['📖 Introduction', '😷 Patient', '💊 Dispensation', '🏥 Visit', '🥼 Diagnostics']
-tab1, tab2, tab3, tab4, tab5 = st.tabs([f'{s}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;' for s in listTabs])
+tab1, tab2, tab3, tab4, tab5 = st.tabs([f'{s}&emsp;&emsp;&emsp;&emsp;&emsp;' for s in listTabs])
 
 # Introduction tab
 with tab1:
