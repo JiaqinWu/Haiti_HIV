@@ -1,5 +1,4 @@
-millify==0.1.1
-streamline_extras.metric_cards 
-plotly.graph_objects 
+millify
+streamlit_extras
+plotly
 altair
-warnings
