@@ -41,10 +41,10 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([f'{s}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp
 
 # Introduction tab
 with tab1:
-    st.write("Welcome to the Introduction tab!")
-    st.write("This dashboard allows you to explore HIV data in Haiti.")
-    st.write("You can customize your exploration using the sidebar options.")
-    st.write("Feel free to analyze patient data, dispensation records, visit information, and diagnostics.")
+    st.write("📖 **Welcome to the Introduction Tab!**")
+    st.write("Explore HIV patient data in Haiti with this interactive dashboard.")
+    st.write("Customize your exploration using the sidebar options.")
+    st.write("Analyze patient information, dispensation records, visit details, and diagnostic records.")
 
 # Patient tab
 with tab2:
@@ -52,7 +52,11 @@ with tab2:
     dash_1 = st.container()
 
     with dash_1:
-        st.write("Welcome to the Patient tab!")
+        st.write("😷 **Welcome to the Patient Tab!**")
+        st.write("Explore essential information about HIV patients in Haiti on this tab.")
+        st.write("Discover key indicators such as the total number of patients, distribution by treatment status (Actif/Active or PIT/Out of care), and insights into occupation and marital status.")
+        st.write("Feel free to customize your exploration of patients' basic information based on your specific needs!")
+
 
     # creates the container for metric card
     dash_2 = st.container()
@@ -231,7 +235,12 @@ with tab2:
 
 # Dispensation tab
 with tab3:
-    st.write("Welcome to the Dispensation tab!")
+    st.write("💊 **Welcome to the Dispensation Tab!**")
+    st.write("Explore the dispensation indicators and trends based on different treatment statuses.")
+    st.write("This tab provides insights into various dispensation metrics, including the total number of dispensation records,")
+    st.write("duration since the first dispensation, early, on-time, and late rates of dispensation, and more.")
+    st.write("Feel free to analyze historical trends and compare dispensation patterns according to your specific criteria!")
+
 
     # creates the container for metric card
     dash_1 = st.container()
@@ -883,7 +892,11 @@ with tab3:
     
 # Visit tab
 with tab4:
-    st.write("Welcome to the Visit tab!")
+    st.write("🏥 **Welcome to the Visit Tab!**")
+    st.write("Explore the historical visit records of HIV patients in Haiti.")
+    st.write("Discover key indicators such as the total number of visits, average visit gap, and average appointment gap.")
+    st.write("Feel free to analyze various aspects of patients' historical visit records based on your specific requirements.")
+
 
     # creates the container for metric card
     dash_1 = st.container()
@@ -1078,7 +1091,10 @@ with tab4:
 
 # Diagnostics tab
 with tab5:
-    st.write("Welcome to the Diagnostics tab!")
+    st.write("🥼 **Welcome to the Diagnostics Tab!**")
+    st.write("This section is dedicated to exploring the historical diagnostic records of HIV patients in Haiti.")
+    st.write("Discover key indicators, such as the total number of historical viral load tests and the proportion of viral load test results by treatment status.")
+    st.write("Feel free to analyze diverse historical diagnostic records based on your specific requirements!")
 
     # creates the container for metric card
     dash_1 = st.container()
