@@ -10,16 +10,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Load data
-# Connect to SQLite database
-db_path = 'project_data/haiti_hiv.db' 
-conn = sqlite3.connect(db_path)
-
-# Load data from SQLite database
-query = 'SELECT * FROM Shiny;'  
-df1 = pd.read_sql(query, conn)
-
-# Close the database connection
-conn.close()
+df1 = pd.read_csv('project_data/Shiny.csv')
 image = "project_data/CGHPI.png"
 
 # Main page content
