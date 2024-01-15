@@ -5,11 +5,21 @@ from millify import millify # shortens values (10_000 ---> 10k)
 from streamlit_extras.metric_cards import style_metric_cards # beautify metric card with css
 import plotly.graph_objects as go
 import altair as alt 
+import sqlite3
 import warnings 
 warnings.filterwarnings('ignore')
 
 # Load data
-df1 = pd.read_csv('project_data/Shiny.csv')
+# Connect to SQLite database
+db_path = 'project_data/haiti_hiv.db' 
+conn = sqlite3.connect(db_path)
+
+# Load data from SQLite database
+query = 'SELECT * FROM Shiny;'  
+df1 = pd.read_sql(query, conn)
+
+# Close the database connection
+conn.close()
 image = "project_data/CGHPI.png"
 
 # Main page content
