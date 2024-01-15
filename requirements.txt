@@ -2,4 +2,3 @@ millify
 streamlit_extras
 plotly
 altair
-sqlite3
