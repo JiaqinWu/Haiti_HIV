@@ -851,7 +851,7 @@ with tab3:
                 y=alt.Y('density:Q', title='Density'),
                 color=alt.Color('outcomeStats:N', scale=alt.Scale(domain=['Actif', 'PIT'], range=['lightcoral', 'darkturquoise']))
             ).properties(
-                title='Density Plot of Percentage of Time Patients are On Time for Pick-ups'
+                title='Density Plot of Years for Continuous Dispensation'
             )
 
             # Add vertical lines for means
